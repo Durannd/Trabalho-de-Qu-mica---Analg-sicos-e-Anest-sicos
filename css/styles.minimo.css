@@ -1,0 +1,590 @@
+@charset "UTF-8";
+
+
+:root {
+  --bs-primary: #1e30f3;
+  --bs-secondary: #e21e80;
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+a {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1826c2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.display-3 {
+  font-size: calc(1.4rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-8 {
+  font-size: calc(1rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 1.75rem;
+}
+
+.fw-bolder {
+  font-weight: 800;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-primary {
+  color: var(--bs-primary);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pb-5 {
+  padding-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-sm-row {
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .flex-sm-row {
+    flex-direction: row;
+  }
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-sm-center {
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+}
+
+.justify-content-xxl-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.gap-4 {
+  gap: 1.5rem;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-sm-flex {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .d-sm-flex {
+    display: flex;
+  }
+}
+
+
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.px-5 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.row>* {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.gx-5 {
+  --gap-x: 3rem;
+  margin-left: calc(-1 * var(--gap-x) / 2);
+  margin-right: calc(-1 * var(--gap-x) / 2);
+}
+
+.gx-5>* {
+  padding-left: calc(var(--gap-x) / 2);
+  padding-right: calc(var(--gap-x) / 2);
+}
+
+.col-xxl-5,
+.col-xxl-7,
+.col-xxl-8,
+.col-auto {
+  flex: auto;
+}
+
+.col-xxl-5,
+.col-xxl-7,
+.col-xxl-8 {
+  width: 100%;
+}
+
+
+.col-auto {
+  width: auto;
+}
+
+@media (min-width: 1400px) {
+  .col-xxl-5 {
+    width: 41.6666667%;
+  }
+
+  .col-xxl-7 {
+    width: 58.3333333%;
+  }
+
+  .col-xxl-8 {
+    width: 66.6666667%;
+  }
+}
+
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-xxl-start {
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .text-xxl-start {
+    text-align: left;
+  }
+}
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #1e30f3, #e21e80);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1e30f3, #e21e80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.profile {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+  background-image: url("https://www.uniad.org.br/wp-content/uploads/2022/05/SITE-UNIAD-1-1280x859.png");
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.corpo {
+
+  width: 50%;
+  padding: 10px;
+
+}
+
+.sombrinha {
+  text-shadow: 5px 5px 5px rgba(119, 119, 119, 0.233);
+}
+
+.box-texto {
+
+  text-align: justify;
+  text-justify: inter-word;
+  height: auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: box-shadow 0.5s ease-in-out;
+  /
+}
+
+.box-texto p {
+  margin: 0 0 0.75rem 0;
+  text-indent: 1.5em;
+  
+}
+
+.corpo h3 {
+  margin-bottom: 0.5rem;
+}
+
+.box-texto:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.452);
+  
+}
+
+
+.iframe-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  
+  border-radius: 12px;
+  overflow: hidden;
+  
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  
+}
+
+
+.iframe-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 0;
+  display: block;
+}
+
+
+@media (max-width: 576px) {
+  .iframe-wrapper {
+    max-width: 100%;
+  }
+}
+
+
+.tabela-uso-analgesicos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+
+.tabela-uso-analgesicos thead th {
+  background: #e9ecef;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.tabela-uso-analgesicos tbody td {
+  padding: 8px 10px;
+  border-top: 1px solid #ddd;
+}
+
+
+.tabela-uso-analgesicos tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.box-iframe {
+  text-align: justify;
+  text-justify: inter-word;
+  height: auto;
+
+  border-radius: 10px;
+
+  padding: 15px;
+  margin: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: box-shadow 0.5s ease-in-out;
+
+}
+
+/* ========================= */
+/*  RESPONSIVIDADE CELULAR   */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .corpo {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .box-texto,
+  .box-iframe {
+    margin: 8px 0;
+    border-radius: 8px;
+  }
+
+  
+  .box-texto,
+  .box-iframe {
+    padding: 12px;
+  }
+
+  
+  .display-3 {
+    font-size: calc(1.6rem + 2vw);
+  }
+
+  .display-5 {
+    font-size: calc(1.3rem + 1.5vw);
+  }
+
+  .display-8 {
+    font-size: 1rem;
+  }
+
+  
+  .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  header .container,
+  section .px-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .box-texto,
+  .box-iframe {
+    margin: 6px 0;
+    padding: 10px;
+  }
+
+  
+  .iframe-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+ 
+  .box-texto,
+  .iframe-wrapper {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+}
